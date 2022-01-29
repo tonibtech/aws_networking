@@ -7,24 +7,24 @@ Description:
 # get the name of the base stack which is created first and has VPC details
 Parameters:
   VPCStackName:
-    Description: Name of the base VPC stack
+    Description: VPC
     Type: String
     Default: BaseStack
     
   KeyPairName:
-    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+    Description: Saturdaykp
     Type: 'AWS::EC2::KeyPair::KeyName'  # standard type
     ConstraintDescription: must be the name of an existing EC2 KeyPair.
   
   InstanceType:
     Description: EC2 instance type
     Type: String
-    Default: t2.micro
+    Default: t3.nano
     
   InstanceImageId:
     Description: EC2 Image Id from this region
     Type: AWS::EC2::Image::Id
-    Default: ami-0cb0e70f44e1a4bb5 # defaults for amazon linux in mumbai region  
+    Default: ami-0a8b4cd432b1c3063 # defaults for amazon linux in us-east-1 region  
     
 Resources:
   # create a security group
