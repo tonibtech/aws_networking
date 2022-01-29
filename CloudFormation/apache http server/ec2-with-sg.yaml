@@ -9,7 +9,7 @@ Parameters:
   VPCStackName:
     Description: VPC
     Type: String
-    Default: BaseStack
+    Default: VPC
     
   KeyPairName:
     Description: Saturdaykp
